@@ -16,10 +16,12 @@ spring:
         - VMware.*
 
 eureka:
+  instance:
+    hostname: 127.0.0.1
   client:
     # 不向注册中心注册实例，因为本身就是注册中心
     register-with-eureka: false
     # 不从 Eureka Server 获取实例
     fetch-registry: false
     service-url:
-      defaultZone: http://xuxiaowei:123456@127.0.0.1:${server.port}/eureka/
+      defaultZone: http://xuxiaowei:123456@${eureka.instance.hostname}:${server.port}/eureka/
