@@ -3,7 +3,7 @@ server:
 
 logging:
   level:
-    web: debug
+    web: info
 
 spring:
   application:
