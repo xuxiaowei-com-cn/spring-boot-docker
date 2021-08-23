@@ -7,7 +7,7 @@ logging:
 
 spring:
   application:
-    name: eureka-server
+    name: eureka-server-security
   cloud:
     inetutils:
       # 将被忽略的网络接口的 Java 正则表达式列表。
