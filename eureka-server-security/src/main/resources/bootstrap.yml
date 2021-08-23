@@ -14,10 +14,6 @@ spring:
       ignored-interfaces:
         # 正则表达式，忽略 VMware 虚拟机网卡
         - VMware.*
-  security:
-    user:
-      name: xuxiaowei
-      password: 123456
 
 eureka:
   client:
