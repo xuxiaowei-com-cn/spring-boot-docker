@@ -8,6 +8,12 @@ logging:
 spring:
   application:
     name: eureka-server
+  cloud:
+    inetutils:
+      # 将被忽略的网络接口的 Java 正则表达式列表。
+      ignored-interfaces:
+        # 正则表达式，忽略 VMware 虚拟机网卡
+        - VMware.*
 
 eureka:
   client:
