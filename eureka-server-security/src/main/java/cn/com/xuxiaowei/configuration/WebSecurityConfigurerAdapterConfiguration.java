@@ -24,6 +24,7 @@ public class WebSecurityConfigurerAdapterConfiguration extends WebSecurityConfig
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
         auth.inMemoryAuthentication()
+                // 密码不处理
                 .passwordEncoder(NoOpPasswordEncoder.getInstance())
                 .withUser("xuxiaowei").password("123456").authorities("USER")
                 .and()
