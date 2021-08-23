@@ -1,0 +1,24 @@
+server:
+  port: 182
+
+logging:
+  level:
+    web: debug
+
+spring:
+  application:
+    name: eureka-client-security
+  cloud:
+    inetutils:
+      # 将被忽略的网络接口的 Java 正则表达式列表。
+      ignored-interfaces:
+        # 正则表达式，忽略 VMware 虚拟机网卡
+        - VMware.*
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://xuxiaowei:123456@127.0.0.1:${server.port}/eureka/
+  instance:
+    # 将自己的IP注册到 Eureka Server
+    prefer-ip-address: true
