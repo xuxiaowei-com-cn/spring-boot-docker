@@ -1,0 +1,8 @@
+#
+# 只能在 application 中使用
+info:
+  name: @project.artifactId@
+  encode: @project.build.sourceEncoding@
+  java:
+    source: @java.version@
+    target: @java.version@

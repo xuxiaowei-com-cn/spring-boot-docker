@@ -5,9 +5,20 @@ logging:
   level:
     web: debug
 
+management:
+  endpoint:
+    info:
+      # 公开应用程序信息
+      enabled: true
+    health:
+      # 何时显示完整的健康详情。
+      show-details: ALWAYS
+
 spring:
   application:
     name: eureka-client-security
+  profiles:
+    active: info
   cloud:
     inetutils:
       # 将被忽略的网络接口的 Java 正则表达式列表。
