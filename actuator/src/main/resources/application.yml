@@ -5,6 +5,15 @@ logging:
   level:
     web: debug
 
+management:
+  endpoint:
+    info:
+      # 公开应用程序信息
+      enabled: true
+    health:
+      # 何时显示完整的健康详情。
+      show-details: ALWAYS
+
 info:
   name: @project.artifactId@
   encode: @project.build.sourceEncoding@
