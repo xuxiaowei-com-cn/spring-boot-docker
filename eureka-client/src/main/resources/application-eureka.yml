@@ -1,0 +1,8 @@
+#
+# 只能在 application 中使用
+eureka:
+  client:
+    healthcheck:
+      # 开启健康状态检查
+      # 自定义实现健康状态检查：com.netflix.appinfo.HealthCheckHandler
+      enabled: true

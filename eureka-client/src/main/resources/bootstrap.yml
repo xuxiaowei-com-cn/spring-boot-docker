@@ -16,9 +16,11 @@ management:
 
 spring:
   application:
-    name: eureka-client
+    name: eureka-client-security
   profiles:
-    active: info
+    active:
+      - info
+      - eureka
   cloud:
     inetutils:
       # 将被忽略的网络接口的 Java 正则表达式列表。
@@ -28,11 +30,8 @@ spring:
 
 eureka:
   client:
-    healthcheck:
-      # 开启健康状态检查
-      # 自定义实现健康状态检查：com.netflix.appinfo.HealthCheckHandler
-      enabled: true
     service-url:
+      # 或者激活 discovery-client，启用自定义权限认证
       defaultZone: http://127.0.0.1:8761/eureka/
   instance:
     # 将自己的IP注册到 Eureka Server
