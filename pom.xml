@@ -23,6 +23,7 @@
         <module>actuator</module>
         <module>eureka-server</module>
         <module>eureka-client</module>
+        <module>eureka-server-security</module>
     </modules>
 
     <dependencies>
