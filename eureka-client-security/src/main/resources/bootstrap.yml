@@ -18,6 +18,7 @@ spring:
 eureka:
   client:
     service-url:
+      # 或者激活 discovery-client，启用自定义权限认证
       defaultZone: http://xuxiaowei:123456@127.0.0.1:8761/eureka/
   instance:
     # 将自己的IP注册到 Eureka Server
