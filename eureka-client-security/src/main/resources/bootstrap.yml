@@ -18,7 +18,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://xuxiaowei:123456@127.0.0.1:${server.port}/eureka/
+      defaultZone: http://xuxiaowei:123456@127.0.0.1:8761/eureka/
   instance:
     # 将自己的IP注册到 Eureka Server
     prefer-ip-address: true
