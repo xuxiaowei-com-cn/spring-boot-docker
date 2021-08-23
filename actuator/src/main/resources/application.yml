@@ -1,0 +1,6 @@
+server:
+  port: 181
+
+logging:
+  level:
+    web: debug
